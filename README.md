@@ -17,7 +17,7 @@ A simple CSS library for creating automatically numbered section headings in HTM
 The CSS `counter()` function[^1] as well as the CSS `counter-reset` property[^2] are used to create automatic numbering for the `<h2>`-`<h6>` HTML section heading tags (the `<h1>` tag is intended to be used as an article title).
 
 [^1]: More information about the CSS `counter()` function on the [MDN website](https://developer.mozilla.org/en-US/docs/Web/CSS/counter).
-[^2]: More information about the CSS `counter-reset` property on the [MDN website](https://developer.mozilla.org/en-US/docs/Web/).
+[^2]: More information about the CSS `counter-reset` property on the [MDN website](https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset).
 
 The number of a section heading is appended before the heading text. The number consists of a section number, a dot and subsequent subsection numbers if available. There are two non-breaking spaces (`\00a0`) added after the last dot that ends the number component.
 
