@@ -1,0 +1,48 @@
+/* Reset counters */
+.headings-autonumbering {
+  counter-reset: h2counter;
+}
+
+.headings-autonumbering h2 {
+  counter-reset: h3counter;
+}
+
+.headings-autonumbering h3 {
+  counter-reset: h4counter;
+}
+
+.headings-autonumbering h4 {
+  counter-reset: h5counter;
+}
+
+.headings-autonumbering h5 {
+  counter-reset: h6counter;
+}
+/* END: Reset counters */
+
+/* Headers numbering */
+.headings-autonumbering h2:before {
+  content: counter(h2counter) ".\00a0\00a0";
+  counter-increment: h2counter;
+}
+
+.headings-autonumbering h3:before {
+  content: counter(h2counter) "." counter(h3counter) ".\00a0\00a0";
+  counter-increment: h3counter;
+}
+
+.headings-autonumbering h4:before {
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\00a0\00a0";
+  counter-increment: h4counter;
+}
+
+.headings-autonumbering h5:before {
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) ".\00a0\00a0";
+  counter-increment: h5counter;
+}
+
+.headings-autonumbering h6:before {
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) ".\00a0\00a0";
+  counter-increment: h6counter;
+}
+/* END: Headers numbering */
